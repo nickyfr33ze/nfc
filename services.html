@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Nick Friesen Consulting</title>
+  <meta name="description" content="NFC services: Systems & Infrastructure Support, Automation & Internal Tooling, Backend Development & Web Tools, and Security Foundations.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand"><a href="index.html">Nick Friesen Consulting</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Services</h1>
+        <p>Each service is scoped so it can be quoted without a discovery call for every small ask. Pick the category that matches your need, or reach out and we'll figure it out together.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="service-detail">
+        <h3>S1 — Systems &amp; Infrastructure Support</h3>
+        <ul>
+          <li>Endpoint support across macOS, Windows, and Linux</li>
+          <li>Server troubleshooting, monitoring, and maintenance</li>
+          <li>Documentation of systems and runbooks</li>
+          <li>User-facing technical communication</li>
+        </ul>
+        <p class="delivers">Delivers: fewer tickets, clearer ownership, less downtime.</p>
+        <p class="best-for">Best for: Small IT/helpdesk teams drowning in tickets. Departments that need reliable infrastructure support without hiring full-time.</p>
+        <a href="contact.html?service=Systems%20Support" class="quote-link">Get a quote &rarr;</a>
+      </div>
+
+      <div class="service-detail">
+        <h3>S2 — Automation &amp; Internal Tooling</h3>
+        <ul>
+          <li>Scripting in Python, Bash, and PowerShell</li>
+          <li>Backend automation to eliminate manual toil</li>
+          <li>Practical internal tools that save recurring time</li>
+        </ul>
+        <p class="delivers">Delivers: work you'd do by hand, done once and automated.</p>
+        <p class="best-for">Best for: Teams stuck in spreadsheets and manual processes. Departments that need custom tools built for their actual workflow.</p>
+        <a href="contact.html?service=Automation" class="quote-link">Get a quote &rarr;</a>
+      </div>
+
+      <div class="service-detail">
+        <h3>S3 — Backend Development &amp; Web Tools</h3>
+        <ul>
+          <li>Practical web tools and internal applications</li>
+          <li>API integration and front-end glue where it matters</li>
+          <li>Building the thing you need instead of buying a tool that's 80% wrong</li>
+        </ul>
+        <p class="delivers">Delivers: working software, not a prototype.</p>
+        <p class="best-for">Best for: Teams that need a specific tool built. Departments that are trying to make generic software work when a custom solution would be better.</p>
+        <a href="contact.html?service=Backend%20Development" class="quote-link">Get a quote &rarr;</a>
+      </div>
+
+      <div class="service-detail">
+        <h3>S4 — Security Foundations</h3>
+        <ul>
+          <li>Defensive foundations, awareness, and hardening</li>
+          <li>Lab-driven security research turned into practical recommendations</li>
+          <li>Security posture assessment and actionable remediation plans</li>
+        </ul>
+        <p class="delivers">Delivers: security that works without the red-team theater.</p>
+        <p class="best-for">Best for: Teams who want solid security foundations without enterprise-grade complexity. Departments that need practical security improvements, not a compliance checklist.</p>
+        <a href="contact.html?service=Security%20Foundations" class="quote-link">Get a quote &rarr;</a>
+      </div>
+
+      <div class="compliance-note">
+        Security consulting is offered as an independent consultancy practice. All work is performed outside of regular employment and does not involve the use of employer resources, systems, or time.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        &copy; 2026 Nick Friesen Consulting. All rights reserved.<br>
+        Security consulting offered as an independent practice, outside of regular employment.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

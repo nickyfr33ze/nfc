@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — Nick Friesen Consulting</title>
+  <meta name="description" content="NFC pricing: Project ($1,500–$5,000), Retainer ($300–$800/mo), and Day Rate ($500–$800/day). Transparent tiered pricing for small teams.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand"><a href="index.html">Nick Friesen Consulting</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Pricing</h1>
+        <p>Three tiers so you can self-select without a call for every small ask. Ranges are published so you know what to expect. Detailed scope is discussed in the conversation.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Project</h3>
+          <p class="subtitle">One scoped deliverable</p>
+          <p class="range">$1,500 – $5,000</p>
+          <p>Fixed price on a defined scope. You tell me what you need, I scope it, you get a single price and a delivery date.</p>
+          <p class="best-for">Best for: Automations, internal tools, one-off fixes, specific builds.</p>
+          <a href="contact.html?service=Project" class="btn-primary" style="display: inline-block;">Request a Quote &rarr;</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Retainer</h3>
+          <p class="subtitle">Ongoing support, predictable cost</p>
+          <p class="range">$300 – $800<span style="font-size: 0.9rem; font-weight: 400;">/mo</span></p>
+          <p>Monthly retainer with predictable hours. You get priority access, regular check-ins, and a set number of hours each month for support and small projects.</p>
+          <p class="best-for">Best for: Small teams that need reliable ongoing support without hiring full-time. Departments that want a predictable IT cost.</p>
+          <a href="contact.html?service=Retainer" class="btn-primary" style="display: inline-block;">Request a Quote &rarr;</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Day Rate</h3>
+          <p class="subtitle">Ad-hoc triage, undefined work</p>
+          <p class="range">$500 – $800<span style="font-size: 0.9rem; font-weight: 400;">/day</span></p>
+          <p>Per-day rate for urgent issues, undefined scope, or short engagements. Capped where possible so costs stay predictable.</p>
+          <p class="best-for">Best for: Emergency troubleshooting, short-term projects, situations where the scope isn't clear yet.</p>
+          <a href="contact.html?service=Day%20Rate" class="btn-primary" style="display: inline-block;">Request a Quote &rarr;</a>
+        </div>
+      </div>
+
+      <p class="pricing-note">These are typical ranges. Final pricing depends on scope, complexity, and timeline. Every engagement starts with a conversation to understand what you actually need.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        &copy; 2026 Nick Friesen Consulting. All rights reserved.<br>
+        Security consulting offered as an independent practice, outside of regular employment.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

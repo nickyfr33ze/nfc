@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nick Friesen Consulting</title>
+  <meta name="description" content="Get in touch with Nick Friesen Consulting. Request a quote for IT support, automation, backend development, or security foundations.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand"><a href="index.html">Nick Friesen Consulting</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Tell me what you need. I'll respond within three business days.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 2rem;">What I take on: scoped projects, ongoing support, and ad-hoc consulting for small teams and departments. I respond to all messages within three business days.</p>
+
+      <div class="contact-layout">
+        <div>
+          <!--
+            FORM SETUP:
+            Replace the action URL below with your Formspree endpoint.
+            1. Go to https://formspree.io and create a free account
+            2. Create a new form pointing to nfriesen@pm.me
+            3. Replace "https://formspree.io/f/YOUR_FORM_ID" with your actual form ID
+            Example: action="https://formspree.io/f/xnqevrdr"
+
+            Currently using mailto: as a temporary fallback.
+          -->
+          <form action="mailto:nfriesen@pm.me" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="organization">Organization <span style="font-weight: 400; color: var(--color-text-secondary);">(optional)</span></label>
+              <input type="text" id="organization" name="organization">
+            </div>
+            <div class="form-group">
+              <label for="service">Service needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="Systems Support">Systems Support</option>
+                <option value="Automation">Automation</option>
+                <option value="Backend Development">Backend Development</option>
+                <option value="Security Foundations">Security Foundations</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Direct Contact</h3>
+          <p><a href="mailto:nfriesen@pm.me">nfriesen@pm.me</a></p>
+          <p>Response time: Within three business days</p>
+
+          <h3 style="margin-top: 1.5rem;">Other Ways to Reach Me</h3>
+          <ul class="contact-links">
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nicholas-friesen-046969169" target="_blank" rel="noopener">linkedin.com/in/nicholas-friesen-046969169</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/nickyfr33ze" target="_blank" rel="noopener">github.com/nickyfr33ze</a></li>
+            <li><strong>X / Twitter:</strong> <a href="https://x.com/NickyFr33ze" target="_blank" rel="noopener">@NickyFr33ze</a></li>
+            <li><strong>Portfolio / Blog:</strong> <a href="https://nickyfr33ze.github.io" target="_blank" rel="noopener">nickyfr33ze.github.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        &copy; 2026 Nick Friesen Consulting. All rights reserved.<br>
+        Security consulting offered as an independent practice, outside of regular employment.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+
+    // Pre-fill service dropdown if ?service= parameter is present in URL
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const serviceParam = params.get('service');
+      if (serviceParam) {
+        const select = document.getElementById('service');
+        for (var i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === serviceParam) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>

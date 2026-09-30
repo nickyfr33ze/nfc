@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Friesen Consulting — Practical IT and Systems Engineering</title>
+  <meta name="description" content="Nick Friesen Consulting helps small teams, departments, and solo operators keep their systems running — endpoint support, automation, backend tooling, and security foundations.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand"><a href="index.html">Nick Friesen Consulting</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Practical IT and systems engineering for teams who'd rather have working infrastructure than a growing ticket backlog.</h1>
+        <p>Nick Friesen Consulting helps small teams, departments, and solo operators keep their systems running — endpoint support, automation, backend tooling, and security foundations — without the overhead of a full shop.</p>
+        <a href="contact.html" class="btn-primary">Request a Quote &rarr;</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Systems &amp; Infrastructure Support</h3>
+            <p>Endpoint support across macOS, Windows, and Linux. Server troubleshooting, monitoring, documentation, and user-facing technical communication. Fewer tickets, clearer ownership, less downtime.</p>
+          </div>
+          <div class="card">
+            <h3>Automation &amp; Internal Tooling</h3>
+            <p>Scripting in Python, Bash, and PowerShell. Backend automation to eliminate manual toil. Practical internal tools that save recurring time. Work you'd do by hand, done once and automated.</p>
+          </div>
+          <div class="card">
+            <h3>Backend Development &amp; Web Tools</h3>
+            <p>Practical web tools and internal applications. API integration and front-end glue where it matters. Building the thing you need instead of buying a tool that's 80% wrong. Working software, not a prototype.</p>
+          </div>
+          <div class="card">
+            <h3>Security Foundations</h3>
+            <p>Defensive foundations, awareness, and hardening. Lab-driven security research turned into practical recommendations. Security that works without the red-team theater.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-light-bg);">
+      <div class="container">
+        <h2 class="section-title">Why NFC</h2>
+        <div class="three-col">
+          <div>
+            <h3>Scoped Tight</h3>
+            <p>Work is scoped tight so it ships on time and doesn't balloon into scope creep. You get a clear deliverable, not an open-ended engagement.</p>
+          </div>
+          <div>
+            <h3>No Overhead</h3>
+            <p>No 24/7 SLAs, no enterprise contracts, no bloated proposals. You get a competent operator who builds things and ships them.</p>
+          </div>
+          <div>
+            <h3>Transparent Pricing</h3>
+            <p>Clear tiered pricing so you know what to expect. Ranges published upfront. Detailed scope discussed in the conversation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <p style="font-size: 1.1rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Ready to stop putting out fires? Let's talk about what you need.</p>
+        <a href="contact.html" class="btn-primary">Get in Touch &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        &copy; 2026 Nick Friesen Consulting. All rights reserved.<br>
+        Security consulting offered as an independent practice, outside of regular employment.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

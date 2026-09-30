@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Nick Friesen Consulting</title>
+  <meta name="description" content="About Nick Friesen Consulting — a solo consultancy focused on practical IT support, automation, backend tooling, and security foundations.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand"><a href="index.html">Nick Friesen Consulting</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>About</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="about-section">
+        <h2>Who I Am</h2>
+        <p>I'm an IT consultant, systems engineer, and security researcher based in Eugene, Oregon. I run Nick Friesen Consulting — a solo consultancy focused on practical IT support, automation, backend tooling, and security foundations for small teams and departments.</p>
+        <p style="margin-top: 0.75rem;">I hold a Bachelor's in Business Administration with a minor in Computer Science. My background spans endpoint support, server administration, Python scripting, security research, and building internal tools that solve real problems.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>Why NFC</h2>
+        <p>Most IT consulting shops are built for enterprises. They sell SLAs, dedicated accounts, and 50-page proposals. That works for a Fortune 500 company. It doesn't work for a department of 15 people who just need their systems to work.</p>
+        <p style="margin-top: 0.75rem;">NFC exists for the teams who need competent, direct help without the overhead. You get a single operator who understands the full stack — from endpoint to server to script to security — and who ships scoped work on time.</p>
+        <p style="margin-top: 0.75rem;">No fluff. No scope creep. Just working infrastructure.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>What I Work On</h2>
+        <ul>
+          <li><strong>Systems &amp; Infrastructure</strong> — macOS, Windows, Linux. Server maintenance, monitoring, documentation, user support.</li>
+          <li><strong>Automation</strong> — Python, Bash, PowerShell. Killing manual processes and building tools that save recurring time.</li>
+          <li><strong>Backend Development</strong> — Web tools, API integrations, internal applications. Practical software that solves actual problems.</li>
+          <li><strong>Security</strong> — Defensive foundations, hardening, awareness. Lab-driven research turned into actionable recommendations.</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h2>Other Interests</h2>
+        <p>When not working on client projects, I contribute to open-source tools, research security topics, and explore the intersection of technology and personal development. These interests inform my approach to consulting — practical, research-driven, and always focused on what actually works.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        &copy; 2026 Nick Friesen Consulting. All rights reserved.<br>
+        Security consulting offered as an independent practice, outside of regular employment.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
